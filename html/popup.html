@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+  <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body style="padding: 2em">
+  <div>
+    <button id="timerButton" class="primary large">スタート</button>
+    <button id="resetTimerButton" class="large">リセット</button>
+    <br>
+    <input type="time" id="timerArea" min="00:00" max="180:00" value="10:00">
+  </div>
+  <br>
+  <br>
+  <div>
+    <button id="updateAttendeesButton" class="primary large">参加者更新</button>
+    <span id="attendeesCount"></span>
+    <br>
+    <input type="text" id="attendeesArea" placeholder="参加者をカンマ区切りで入力してください。例: 会議太郎,有閑次郎">
+    <span class="icon-help tooltip" aria-label="カンマ区切りで入力してください。例: 会議太郎,有閑次郎"></span>
+  </div>
+  <br>
+  <br>
+  <div>
+    <button id="decideRoleButton" class="primary large">役割決め</button>
+    <button id="addRoleButton" class="tertiary large">+</button>
+    <div id="rolesArea"></div>
+  </div>
+  <br>
+  <br>
+  <div>
+    <button id="decideCheckinButton" class="primary primary large">チェックイン</button>
+    <br>
+    <textarea rows="8" id="checkinArea"></textarea>
+  </div>
+
+  <script src="/js/popup.js"></script>
+</body>
+</div>
+</html>

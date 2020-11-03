@@ -1,0 +1,12 @@
+#timerArea {
+  font-size: 3em;
+  padding: 0.25em 0.5em;
+  border: 1px solid #ddd;
+  margin-left: 8px;
+}
+#attendeesArea {
+  width: 100%;
+}
+#checkinArea {
+  width: 100%;
+}
