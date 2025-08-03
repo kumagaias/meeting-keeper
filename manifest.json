@@ -1,18 +1,15 @@
 {
   "name": "ミーティングキーパー",
-  "version": "1.1",
-  "manifest_version": 2,
+  "version": "1.1.1",
+  "manifest_version": 3,
   "description": "ミーティングのタイムキーパー、役割決め、チェックインを効率化します。Google カレンダーでミーティングの予定を開き、右クリックから起動すれば自動で出席者を読み込みます。",
   "icons": {
-    "128" : "resources/icon_128.png"
+    "128": "resources/icon_128.png"
   },
   "background": {
-    "scripts": [
-      "js/background.js"
-    ],
-    "persistent": false
+    "service_worker": "js/background.js"
   },
-  "browser_action": {
+  "action": {
     "default_icon": "resources/icon_128.png",
     "default_title": "Sample",
     "default_popup": "html/popup.html"
@@ -20,6 +17,9 @@
   "permissions": [
     "activeTab",
     "contextMenus"
+  ],
+  "host_permissions": [
+    "https://calendar.google.com/*"
   ],
   "content_scripts": [
     {
